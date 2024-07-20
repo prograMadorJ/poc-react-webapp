@@ -14,11 +14,11 @@ export const router = createBrowserRouter([
     //   const { token } = authProvider;
     //   return { token };
     // },
-    Component: MainLayout,
     children: [
       {
         path: "",
         // loader: authLoader,
+        Component: MainLayout,
         children: [
           { path: "/", element: <DashboardPage /> },
           { path: "/pedidos", element: <PedidosPage /> },
